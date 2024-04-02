@@ -1,0 +1,28 @@
+Set up a Fargate Service
+
+AWS to ECS
+
+Create a task 
+Give task name 
+Make sure task has a Task ExecutionRole
+Add container name and image URI / Docker image
+Assign communication ports that need to be opened ( ie: 80, 5000 )
+Add or change any other settings if container needs them
+Create Task
+
+Create Cluster
+Go to Clusters
+Add cluster name
+Select AWS Fargate infrustructure
+Create cluster
+Once cluster is created to services tab
+Create service 
+Use Fargate as Capacity Provider
+In deployment provider - Family select task ( this is the task create earlier )
+Add service name
+Add Desired tasks
+In Network makes use you are using the security group required ( Default, WebAccess - they will have port mappings you need for the application you are running )
+Load balancing ( Optional )
+Once service is created task will be provisioned, when they are done then go to the network tab
+:X
+Go to public ip address and your service should be accessible 
