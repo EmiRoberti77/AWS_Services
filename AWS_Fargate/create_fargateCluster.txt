@@ -25,3 +25,6 @@ In Network makes use you are using the security group required ( Default, WebAcc
 Load balancing ( Optional )
 Once service is created task will be provisioned, when they are done then go to the network tab
 Go to public ip address and your service should be accessible 
+
+video reference:
+https://www.youtube.com/watch?v=1n46Nudo6Yo&t=75s
